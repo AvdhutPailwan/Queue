@@ -6,13 +6,152 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ImageView
+        android:id="@+id/stack_d"
+        android:layout_width="145dp"
+        android:layout_height="80dp"
+        android:rotation="-90"
+        android:src="@drawable/stack_d"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/stack_c"
+        android:layout_width="145dp"
+        android:layout_height="80dp"
+        android:rotation="-90"
+        android:src="@drawable/stack_c"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.626"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/stack_b"
+        android:layout_width="145dp"
+        android:layout_height="80dp"
+        android:rotation="-90"
+        android:src="@drawable/stack_b"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.786"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/stack_a"
+        android:layout_width="145dp"
+        android:layout_height="80dp"
+        android:rotation="-90"
+        android:src="@drawable/stack_a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943"
+        android:visibility="gone"
+        tools:visibility="visible"
+        />
+
+    <ImageView
+        android:id="@+id/stack_e"
+        android:layout_width="145dp"
+        android:layout_height="80dp"
+        android:rotation="-90"
+        android:src="@drawable/stack_e"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.324"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/front"
+        android:layout_width="73dp"
+        android:layout_height="29dp"
+        android:src="@drawable/front"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/rear"
+        android:layout_width="73dp"
+        android:layout_height="29dp"
+        android:src="@drawable/rear"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935"
+        tools:visibility="visible" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btn_enqueue"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginBottom="136dp"
+        android:elevation="22sp"
+        app:cardBackgroundColor="@color/dark_blue"
+        app:cardElevation="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="enqueue"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="22sp" />
+        />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btn_dequeue"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginBottom="204dp"
+        android:elevation="22sp"
+        app:cardBackgroundColor="@color/dark_blue"
+        app:cardElevation="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="dequeue"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="22sp" />
+        />
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
